@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+import re
+d = '''<?xml version="1.0" encoding="UTF-8"?><CDO><CDOF N="cdoReturn"><CDO><NF N="nCode" V="0"/><STRF N="strText" V="OK"/><STRF N="strInfo" V="OK"/></CDO></CDOF><CDOF N="cdoResponse"><CDO><CDOF N="cdoUser"><CDO><LF N="lId" V="37700006733"/><STRF N="strLoginId" V="yzu_132003104"/><STRF N="strHash" V="e10adc3949ba59abbe56e057f20f883e"/><STRF N="strName" V="陈晓伟"/><STRF N="strNickName" V=""/><BYF N="nVerifyStage" V="2"/><DTF N="dtLastLoginTime" V="2015-12-28 23:31:58"/><STRF N="strHeadURL" V=""/><BF N="bLocked" V="true"/><BF N="bIsRegUser" V="false"/><STRF N="strEmail" V="1243277633@qq.com"/></CDO></CDOF><NF N="nRecordCount" V="1"/><STRAF N="arrLoginUrl"><STR>http://yzu.njcedu.com/teacher/Servlet/doLogin.svl?key=e660389ad516eaefe769bf196593614b9c2b26a5dcdaa563f0c56612fc53e732095d02389ec3baca0ee3090fb4298003db660530cbf284c373c4e837ba45b055e317d1d6b14335534632f2bab89e00bc09b9a1ab6b3aff3c130dc0e107da0797bd7635fabe0f897b3b054a332c7ac286bdec87526c389269d09915e2c795cc34d1c41c9aa06bfbb859a0bcdc89e681072c8e48e04faeb92cf36c313b0c6e4372|E6547551FE71681F14F2190715E6A097</STR></STRAF></CDO></CDOF></CDO>'''
+scholltoken = re.search(r'key=(.*)</STR>',d)
+print scholltoken.group(1)
+

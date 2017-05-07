@@ -1,0 +1,1 @@
+strli = '%2C'.join(list)

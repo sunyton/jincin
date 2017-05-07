@@ -1,0 +1,1 @@
+http://yzu.njcedu.com/student/prese/examin/handleTrans.cdo?strServiceName=StudentExminService&strTransName=modifyStudentExaminUsedTime
